@@ -98,9 +98,11 @@
             color: #000000;
         }
         .infographic-container {
-            min-height: 800px;
+            /* Increased height to 1200px to accommodate a tall infographic */
+            min-height: 1200px; 
             background-color: #f9f9f9;
-            border: 3px dashed #993333;
+            /* CHANGED from dashed to SOLID border */
+            border: 3px solid #993333; 
             border-radius: 1rem;
             display: flex;
             align-items: center;
@@ -109,6 +111,12 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             font-size: 1.25rem;
             color: #333;
+            
+            /* Apply the uploaded image as a background */
+            background-image: url('original-project-info.jpg');
+            background-size: contain; 
+            background-repeat: no-repeat;
+            background-position: center top; 
         }
     </style>
 </head>
@@ -194,9 +202,7 @@
         <section id="original-project-info" class="brochure-section">
             <div class="page-content text-center">
                 <h3 class="text-4xl font-semibold mb-8 text-black border-b-2 border-accent-red pb-2">Infographic Used for Information</h3>
-                <p class="text-xl leading-relaxed mb-6">
-                    This page shows the original infographic used to compile the information for this travel brochure. Click the link below to view it!
-                </p>
+                
                 <a href="https://www.canva.com/design/DAG0Oxb6ogE/609rLVUmbmgbD4cEnoLpGg/edit?utm_content=DAG0Oxb6ogE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
                    target="_blank" 
                    class="inline-block px-8 py-3 mb-8 text-white font-bold rounded-lg bg-accent-red hover:bg-[#a94444] transition duration-200 shadow-md">
@@ -204,10 +210,6 @@
                 </a>
                 
                 <div class="infographic-container w-full mx-auto">
-                    <p class="text-center text-lg font-semibold">
-                        Replace this text with your infographic image or embed code.<br>
-                        (We made this box tall so your entire infographic can show!)
-                    </p>
                 </div>
 
                 <p class="mt-12 text-sm text-black">Made by: Ayaan Sarkar</p>
